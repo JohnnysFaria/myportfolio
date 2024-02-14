@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import Styled from 'styled-components';
-import Cover from '../../img/projeto1.png';
-import CoverActive from '../../img/projeto1ativo.png';
-import BtnProjeto from './BtnProjeto';
+import Cover from '../../../img/projeto1.png';
+import CoverActive from '../../../img/projeto1ativo.png';
 
 
 const Container = Styled.div`
@@ -16,7 +15,7 @@ const Pic = Styled.div`
     width: 100%;
 `;
 
-export const Projetos = () => {
+export const Thumbnail = () => {
   const [over, setOver] = useState(false);
   return (
     <>
@@ -32,4 +31,4 @@ export const Projetos = () => {
   );
 };
 
-export default Projetos;
+export default Thumbnail ;

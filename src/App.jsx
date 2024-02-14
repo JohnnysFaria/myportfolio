@@ -6,13 +6,12 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Profile from './Components/Profile/Profile';
 import { Sobre } from './Components/Profile/Sobre';
-import Projetos from './Components/Projetos/Projetos';
 import Home from './Components/Home/Home';
 import XP from './Components/XP/XP';
-import { InfoProjeto } from './Components/Projetos/InfoProjeto';
-import Titles from './Components/Utils/Titles';
-import BtnProjeto from './Components/Projetos/BtnProjeto';
-
+import ProjetosUm from './Components/Projetos/ProjetoUm/ProjetosUm';
+import ProjetosDois from './Components/Projetos/ProjetoDois/ProjetoDois';
+import SectionProjects from './Components/Projetos/SectionProjects';
+ 
 const Background = Styled.div`
   background: #C8C3BA;
   width:100%;
@@ -25,16 +24,11 @@ const Container = Styled.div`
   justify-content: center;
   padding: 3rem 3rem 0 3rem;
 `;
+
 const Wrapper = Styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
-
-const WrapperBtn = Styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
 `;
 
 
@@ -50,14 +44,7 @@ const App = () => {
             <Profile />
             <Sobre />
           </Wrapper>
-          <Titles title='Projetos'/>
-          <Wrapper>
-            <InfoProjeto/>
-            <Projetos />
-          </Wrapper>
-          <WrapperBtn>
-          <BtnProjeto/>
-          </WrapperBtn>
+          <SectionProjects />
           <Home />
           <XP />
           <Home />

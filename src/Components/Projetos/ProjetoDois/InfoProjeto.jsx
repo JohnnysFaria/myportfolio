@@ -25,7 +25,7 @@ export const InfoProjeto = () => {
 
         <P>
             <strong>
-            Projeto Um<br/>
+            Projeto Dois<br/>
             </strong> 
 
           No mundo da criação web, o projeto de front-end é a peça-chave que dá vida a websites e aplicativos. É a arte de traduzir conceitos e visões em interfaces digitais atraentes e funcionais. Neste processo, designers e desenvolvedores trabalham em conjunto para moldar a experiência online.
@@ -42,3 +42,5 @@ export const InfoProjeto = () => {
     </InfoText>
   );
 };
+
+export default InfoProjeto;

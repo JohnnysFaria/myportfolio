@@ -15,7 +15,7 @@ const Title = Styled.div`
     font-weight: 700;
     line-height: 85px;
     letter-spacing: 0.02em;
-    text-align: left;
+    text-align: center;
 `;
 const H2 = Styled.h2`
     font-family: Lora;
