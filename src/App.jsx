@@ -45,8 +45,9 @@ const App = () => {
             <Sobre />
           </Wrapper>
           <SectionProjects />
-          <Home />
-          <XP />
+            <XP />
+          <Wrapper>
+          </Wrapper>
           <Home />
           <Footer />
         </Container>

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Styled from 'styled-components';
-import Cover from '../../../img/projeto1.png';
-import CoverActive from '../../../img/projeto1ativo.png';
+import Cover from '../../../img/projeto2.png';
+import CoverActive from '../../../img/projeto2ativo.png';
 
 
 const Container = Styled.div`

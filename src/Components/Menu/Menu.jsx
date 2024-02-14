@@ -55,7 +55,7 @@ const Menu = () => {
           to="hero"
           spy={true}
           smooth={true}
-          offset={50}
+          offset={-50}
           duration={500}
         >
           Sobre mim
@@ -65,11 +65,10 @@ const Menu = () => {
           to="projetos"
           spy={true}
           smooth={true}
-          offset={-60}
+          offset={-170}
           duration={500}
         >
-          {' '}
-          Projetos{' '}
+          Projetos
         </NavbarLink>
 
         <NavbarLink
@@ -79,30 +78,28 @@ const Menu = () => {
           offset={-165}
           duration={500}
         >
-          {' '}
-          Experiência{' '}
+          Experiência
         </NavbarLink>
 
         <NavbarLink
-          to="Projetos"
+          to="formacao"
           spy={true}
           smooth={true}
           offset={-150}
           duration={500}
         >
-          {' '}
-          Formação{' '}
+          Formação
         </NavbarLink>
 
         <NavbarLink
-          to="Projetos"
+          to="contato"
           spy={true}
           smooth={true}
           offset={50}
           duration={500}
         >
-          {' '}
-          Contato{' '}
+
+          Contato
         </NavbarLink>
       </Nav>
     </Container>
