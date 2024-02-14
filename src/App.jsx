@@ -9,6 +9,9 @@ import { Sobre } from './Components/Profile/Sobre';
 import Projetos from './Components/Projetos/Projetos';
 import Home from './Components/Home/Home';
 import XP from './Components/XP/XP';
+import { InfoProjeto } from './Components/Projetos/InfoProjeto';
+import Titles from './Components/Utils/Titles';
+import BtnProjeto from './Components/Projetos/BtnProjeto';
 
 const Background = Styled.div`
   background: #C8C3BA;
@@ -22,11 +25,19 @@ const Container = Styled.div`
   justify-content: center;
   padding: 3rem 3rem 0 3rem;
 `;
-const Container2 = Styled.div`
+const Wrapper = Styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
 `;
+
+const WrapperBtn = Styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+`;
+
+
 
 const App = () => {
   return (
@@ -35,11 +46,18 @@ const App = () => {
         <Container>
           <Menu />
           <Header />
-          <Container2>
+          <Wrapper>
             <Profile />
             <Sobre />
-          </Container2>
-          <Projetos />
+          </Wrapper>
+          <Titles title='Projetos'/>
+          <Wrapper>
+            <InfoProjeto/>
+            <Projetos />
+          </Wrapper>
+          <WrapperBtn>
+          <BtnProjeto/>
+          </WrapperBtn>
           <Home />
           <XP />
           <Home />

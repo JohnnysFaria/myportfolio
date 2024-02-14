@@ -9,7 +9,6 @@ const Container = Styled.div`
     align-items: center;
     border-bottom: 4px solid #2A2623;
 `;
-
 const Title = Styled.div`
     font-family: Playfair Display;
     font-size: 64px;
@@ -26,7 +25,6 @@ const H2 = Styled.h2`
     letter-spacing: 0.02em;
     text-align: left;
 `;
-
 const H3 = Styled.h3`
     font-family: Lora;
     font-size: 20px;
@@ -35,14 +33,12 @@ const H3 = Styled.h3`
     letter-spacing: 0.02em;
     text-align: right;
 `;
-
 const Container2 = Styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
     align-items: center;
 `;
-
 const Subtitle = Styled.h4`
     margin-left:20px;
     font-family: Lora;
