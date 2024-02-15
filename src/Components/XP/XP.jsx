@@ -13,7 +13,6 @@ const Wrapper = Styled.div`
   width: 50%;
 `
 const WrapperCargo = Styled.div`
-  padding: 25px;
   width: 100%;
 `
 

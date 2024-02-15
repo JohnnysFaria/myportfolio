@@ -13,6 +13,11 @@ const Textcontainer = Styled.div`
 `;
 
 const P = Styled.p`
+  font-family: Lora;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.02em;
   text-align:justify;
 `;
 

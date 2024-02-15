@@ -3,22 +3,23 @@ import ProjetoUm from './ProjetoUm/ProjetosUm'
 import ProjetoDois from './ProjetoDois/ProjetoDois'
 import styled from 'styled-components'
 
+const Container = styled.div`
+  width: 100%;
+`
+
 const Wrapper = styled.div`
     width: 100%;
-    border-top: 4px solid #2A2623;
-    padding: 20px 0;
+    margin: 20px 0;
+    border: 2px solid #2A2623;
 `
 
 export const SectionProjects = () => {
   return (
-    <div>
-        <Wrapper>
-        <ProjetoUm/>
-        </Wrapper>
-        <Wrapper>
-        <ProjetoDois/>
-        </Wrapper>
-    </div>
+    <Container>
+          <ProjetoUm/>
+        <Wrapper/>
+          <ProjetoDois/>
+    </Container>
   )
 }
 

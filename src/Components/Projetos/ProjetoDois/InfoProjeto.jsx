@@ -4,15 +4,20 @@ import Styled from 'styled-components';
 const InfoText = Styled.div`
     display:flex;
     padding: 14px;
-    margin-right: 1rem;  
+    margin-left: 1rem;  
 `;
 
 const Textcontainer = Styled.div`
   text-align:left;
-  padding:10px;
+
 `;
 
 const P = Styled.p`
+  font-family: Lora;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.02em;
   text-align:justify;
 `;
 

@@ -23,10 +23,10 @@ const ButtonMenu = Styled.div`
     color: #DAD5CE;
 }`;
 
-const BtnMenu = ({ text }, ref) => {
+const BtnMenu = ({ text }) => {
   return (
     <>
-      <ButtonMenu ref={ref}>{text}</ButtonMenu>
+      <ButtonMenu>{text}</ButtonMenu>
     </>
   );
 };
