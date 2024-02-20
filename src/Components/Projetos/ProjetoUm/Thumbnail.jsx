@@ -12,7 +12,6 @@ const Container = Styled.div`
 `;
 
 const Pic = Styled.div`
-    width: 100%;
 `;
 
 export const Thumbnail = () => {

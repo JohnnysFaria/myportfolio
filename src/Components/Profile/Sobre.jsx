@@ -20,6 +20,12 @@ const Textcontainer = Styled.div`
 
 const P = Styled.p`
   text-align:justify;
+  font-family: Lora;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: justify;
 `;
 
 const O = Styled.p`

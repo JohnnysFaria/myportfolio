@@ -1,5 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
+import { device } from '../Utils/size'
 
 const Container = Styled.div`
     display: flex;
@@ -8,6 +9,10 @@ const Container = Styled.div`
     padding: 30px 10px;
     align-items: center;
     border-bottom: 4px solid #2A2623;
+
+    @media ${device.tablet} {
+      padding: 30px 0 0 0;
+    }
 `;
 const Title = Styled.div`
     font-family: Playfair Display;
@@ -16,6 +21,13 @@ const Title = Styled.div`
     line-height: 85px;
     letter-spacing: 0.02em;
     text-align: center;
+
+    @media ${device.tablet} {
+      font-size: 32px;
+      line-height: 26px;
+  }
+
+
 `;
 const H2 = Styled.h2`
     font-family: Lora;
@@ -24,6 +36,11 @@ const H2 = Styled.h2`
     line-height: 26px;
     letter-spacing: 0.02em;
     text-align: left;
+
+    @media ${device.tablet} {
+      font-size: 14px;
+      line-height: 16px;
+  }
 `;
 const H3 = Styled.h3`
     font-family: Lora;
@@ -32,15 +49,19 @@ const H3 = Styled.h3`
     line-height: 26px;
     letter-spacing: 0.02em;
     text-align: right;
+
+    @media ${device.tablet} {
+      font-size: 14px;
+      line-height: 16px;
+  }
 `;
 const Container2 = Styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     align-items: center;
 `;
 const Subtitle = Styled.h4`
-    margin-left:20px;
     font-family: Lora;
     font-size: 16px;
     font-weight: 600;
@@ -48,6 +69,8 @@ const Subtitle = Styled.h4`
     letter-spacing: 0.02em;
     text-align: left;
 `;
+
+
 
 export const Header = () => {
   return (

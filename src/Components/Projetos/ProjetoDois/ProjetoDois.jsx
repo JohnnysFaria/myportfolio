@@ -3,6 +3,7 @@ import Styled from 'styled-components';
 import InfoProjeto from './InfoProjeto';
 import Thumbnail from './Thumbnail';
 import BtnProjeto from '../BtnProjeto';
+import { device } from '../../Utils/size';  
 
 const Section = Styled.section`
     display: flex;
@@ -13,12 +14,21 @@ const Wrapper = Styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media ${device.tablet} {
+      flex-direction: column;
+  }
 `;
 
 const WrapperBtn = Styled.div`
   display: flex;
   width: 100%;
   justify-content: flex-end;
+
+  @media ${device.tablet} {
+    justify-content: center;
+  }
+
 `;
 
 const ProjetoDois = () => {
