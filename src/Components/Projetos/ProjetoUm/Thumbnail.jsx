@@ -12,7 +12,12 @@ const Container = Styled.div`
 `;
 
 const Pic = Styled.div`
+  width: 100%;
 `;
+
+const Image = Styled.img`
+    width: 100%;
+`
 
 export const Thumbnail = () => {
   const [over, setOver] = useState(false);
@@ -23,7 +28,7 @@ export const Thumbnail = () => {
           onMouseOver={() => setOver(true)}
           onMouseOut={() => setOver(false)}
         >
-          <img src={over ? CoverActive : Cover} alt="arrow" />
+          <Image src={over ? CoverActive : Cover} alt="arrow" />
         </Pic>
       </Container>
     </>

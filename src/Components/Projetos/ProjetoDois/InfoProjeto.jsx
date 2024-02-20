@@ -1,10 +1,16 @@
 import React from 'react';
 import Styled from 'styled-components';
+import { device } from '../../Utils/size'
 
 const InfoText = Styled.div`
     display:flex;
     padding: 14px;
     margin-left: 1rem;  
+
+    @media ${device.tablet} {
+      margin: 0 auto;
+      padding: 0;
+    }
 `;
 
 const Textcontainer = Styled.div`
@@ -19,6 +25,11 @@ const P = Styled.p`
   line-height: 18px;
   letter-spacing: 0.02em;
   text-align:justify;
+
+  @media ${device.tablet} {
+    font-size: 16px;
+    line-height: 21px;
+    }
 `;
 
 

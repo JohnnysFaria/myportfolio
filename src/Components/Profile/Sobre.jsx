@@ -1,11 +1,16 @@
 import React from 'react';
 import Styled from 'styled-components';
+import { device } from '../Utils/size'
 
 const SobreText = Styled.div`
    display:flex;
     border: 2px dotted #2A2623;
     padding: 14px;
     margin-left: 1rem;  
+
+    @media ${device.tablet} {
+      margin: 0 auto;
+    }
 `;
 
 const Text = Styled.div`
@@ -26,6 +31,11 @@ const P = Styled.p`
   line-height: 18px;
   letter-spacing: 0.02em;
   text-align: justify;
+
+  @media ${device.tablet} {
+    font-size: 16px;
+    line-height: 21px;
+  }
 `;
 
 const O = Styled.p`

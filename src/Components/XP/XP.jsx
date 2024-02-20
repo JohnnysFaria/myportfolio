@@ -2,6 +2,7 @@ import React from 'react';
 import Styled from 'styled-components';
 import Titles from '../Utils/Titles';
 import CardXp, { Eclipse } from './CardXp';
+import { device } from '../Utils/size'
 
 const Container = Styled.section`
   display: flex;
@@ -11,6 +12,11 @@ const Container = Styled.section`
 
 const Wrapper = Styled.div`
   width: 50%;
+
+  @media ${device.mobileL} {
+    display: none;
+  }
+
 `
 const WrapperCargo = Styled.div`
   width: 100%;
