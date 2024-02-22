@@ -23,7 +23,7 @@ const Title = Styled.div`
     text-align: center;
 
     @media ${device.tablet} {
-      font-size: 32px;
+      font-size: 22px;
       line-height: 26px;
   }
 
@@ -38,8 +38,8 @@ const H2 = Styled.h2`
     text-align: left;
 
     @media ${device.tablet} {
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 10px;
+      line-height: 12px;
   }
 `;
 const H3 = Styled.h3`
@@ -51,8 +51,8 @@ const H3 = Styled.h3`
     text-align: right;
 
     @media ${device.tablet} {
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 10px;
+      line-height: 12px;
   }
 `;
 const Container2 = Styled.div`

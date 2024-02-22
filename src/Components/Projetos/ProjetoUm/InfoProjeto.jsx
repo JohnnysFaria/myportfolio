@@ -16,6 +16,10 @@ const InfoText = Styled.div`
 const Textcontainer = Styled.div`
   text-align:left;
   padding:10px;
+
+  @media ${device.tablet} {
+    padding: 0;
+  }
 `;
 
 const P = Styled.p`

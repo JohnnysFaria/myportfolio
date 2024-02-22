@@ -3,30 +3,32 @@ import Styled from 'styled-components';
 import { device } from '../Utils/size'
 
 const SobreText = Styled.div`
-   display:flex;
+    display:flex;
     border: 2px dotted #2A2623;
     padding: 14px;
     margin-left: 1rem;  
 
     @media ${device.tablet} {
       margin: 0 auto;
+      border: none;
+      padding: 0;
     }
 `;
 
 const Text = Styled.div`
   display: flex;
+  align-items:center;
   text-align: justify;
 `;
 
 const Textcontainer = Styled.div`
   text-align:left;
-  padding:10px;
 `;
 
 const P = Styled.p`
   text-align:justify;
   font-family: Lora;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0.02em;
@@ -39,18 +41,23 @@ const P = Styled.p`
 `;
 
 const O = Styled.p`
-  width: 30px;
-  height: 50px;
+  width: 24px;
+  height: 40px;
   padding: 2px;
   border-radius: 4px;
   color: white;
   background: #2A2623;
   text-align: center;
   font-family: Lora;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   margin:0;
   margin-right: 0.2rem;
+
+  @media ${device.tablet} {
+    width: 26px;
+    height: 55px;
+  }
 `;
 
 export const Sobre = () => {
@@ -63,7 +70,7 @@ export const Sobre = () => {
             lá! Imagine um mundo onde a curiosidade é a bússola que guia os
             passos de alguém.
           </P>
-        </Text>
+          </Text>
         <P>
           Nesse cenário, conheça Johnny Faria, um explorador incansável do
           conhecimento e da criatividade. Com olhos brilhantes e mente
@@ -72,8 +79,6 @@ export const Sobre = () => {
           intelecto é como um caleidoscópio, refletindo uma variedade infinita
           de interesses e paixões.
         </P>
-      </Textcontainer>
-      <Textcontainer>
         <P>
           Nesse cenário, conheça [Seu Nome], um explorador incansável do
           conhecimento e da criatividade. Com olhos brilhantes e mente
@@ -82,6 +87,8 @@ export const Sobre = () => {
           intelecto é como um caleidoscópio, refletindo uma variedade infinita
           de interesses e paixões.
         </P>
+
+        
       </Textcontainer>
     </SobreText>
   );
