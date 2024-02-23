@@ -4,7 +4,7 @@ import Styled from 'styled-components';
 import Menu from './Components/Menu/Menu';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-import Profile from './Components/Profile/Pic';
+import Profile from './Components/Profile/Profile';
 import { Sobre } from './Components/Profile/Sobre';
 import Home from './Components/Home/Home';
 import XP from './Components/XP/XP';
@@ -40,9 +40,7 @@ const App = () => {
         <Container>
           <Menu />
           <Header />
-
             <Profile />
-
             <SectionProjects />
             <XP />
             <Home />

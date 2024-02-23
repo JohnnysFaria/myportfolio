@@ -1,7 +1,7 @@
 import React from 'react'
 import Styled from 'styled-components';
 import Pic from './Pic';
-import { Sobre } from './Sobre';
+import Sobre from './Sobre';
 import { device } from '../Utils/size'
 
 const Wrapper = Styled.div`
@@ -21,3 +21,5 @@ export const Profile = () => {
     </Wrapper>
   )
 }
+
+export default Profile;

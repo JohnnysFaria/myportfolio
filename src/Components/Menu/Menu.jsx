@@ -10,8 +10,8 @@ const Container = Styled.nav`
     padding: 0 3rem;
 
     @media ${device.mobileL} {
-      top:635px;
-    padding: 0;
+      top: 587px;
+      padding: 0;
 
     }
 `;
@@ -85,7 +85,7 @@ const Menu = () => {
           offset={-165}
           duration={500}
         >
-          Experiência
+          Exp
         </NavbarLink>
 
         <NavbarLink

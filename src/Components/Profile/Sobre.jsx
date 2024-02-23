@@ -93,3 +93,6 @@ export const Sobre = () => {
     </SobreText>
   );
 };
+
+
+export default Sobre;
