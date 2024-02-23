@@ -1,12 +1,19 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import Styled from 'styled-components';
+import { device } from '../Utils/size'
 
 const Container = Styled.nav`
     position: fixed;
     width: 100%;
     top:0;
     padding: 0 3rem;
+
+    @media ${device.mobileL} {
+      top:635px;
+    padding: 0;
+
+    }
 `;
 
 const Nav = Styled.nav`
@@ -58,7 +65,7 @@ const Menu = () => {
           offset={-50}
           duration={500}
         >
-          Sobre mim
+          Sobre
         </NavbarLink>
 
         <NavbarLink

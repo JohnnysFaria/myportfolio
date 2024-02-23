@@ -4,13 +4,14 @@ import Styled from 'styled-components';
 import Menu from './Components/Menu/Menu';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-import Profile from './Components/Profile/Profile';
+import Profile from './Components/Profile/Pic';
 import { Sobre } from './Components/Profile/Sobre';
 import Home from './Components/Home/Home';
 import XP from './Components/XP/XP';
 import ProjetosUm from './Components/Projetos/ProjetoUm/ProjetosUm';
 import ProjetosDois from './Components/Projetos/ProjetoDois/ProjetoDois';
 import SectionProjects from './Components/Projetos/SectionProjects';
+import { device } from './Components/Utils/size'
  
 const Background = Styled.div`
   background: #C8C3BA;
@@ -23,16 +24,12 @@ const Container = Styled.div`
   align-items: center;
   justify-content: center;
   padding: 3rem 3rem 0 3rem;
-`;
-
-const Wrapper = Styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media (max-width: 768px) {
-      flex-direction: column;
+  @media ${device.mobileL} {
+    padding: 0 1rem;
   }
 `;
+
+
 
 
 
@@ -43,16 +40,13 @@ const App = () => {
         <Container>
           <Menu />
           <Header />
-          <Wrapper>
+
             <Profile />
-            <Sobre />
-          </Wrapper>
-          <SectionProjects />
+
+            <SectionProjects />
             <XP />
-          <Wrapper>
-          </Wrapper>
-          <Home />
-          <Footer />
+            <Home />
+            <Footer />
         </Container>
       </BrowserRouter>
     </Background>
