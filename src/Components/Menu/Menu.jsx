@@ -52,6 +52,10 @@ const NavbarLink = Styled(Link)`
     &:focus{
     background: #292421;
     color: #DAD5CE;
+
+    @media ${device.mobileL} {
+      font-size: 12px;
+    }
 }`;
 
 const Menu = () => {
@@ -85,7 +89,7 @@ const Menu = () => {
           offset={-165}
           duration={500}
         >
-          Exp
+          Experiência
         </NavbarLink>
 
         <NavbarLink
