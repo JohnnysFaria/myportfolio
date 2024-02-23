@@ -10,7 +10,7 @@ const Container = Styled.nav`
     padding: 0 3rem;
 
     @media ${device.mobileL} {
-      top: 570px;
+      top: 0;
       padding: 0;
 
     }
