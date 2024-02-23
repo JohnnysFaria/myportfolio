@@ -30,6 +30,9 @@ const Nav = Styled.nav`
     font-weight: 900;
     font-style: normal;
     color: black;
+    @media ${device.mobileL} {
+      font-size: 12px;
+    }
 `;
 
 const NavbarLink = Styled(Link)`
@@ -53,9 +56,7 @@ const NavbarLink = Styled(Link)`
     background: #292421;
     color: #DAD5CE;
 
-    @media ${device.mobileL} {
-      font-size: 12px;
-    }
+
 }`;
 
 const Menu = () => {
