@@ -1,5 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
+import {device} from '../Utils/size'
 
 const ButtonMenu = Styled.div`
     display: flex;
@@ -21,7 +22,11 @@ const ButtonMenu = Styled.div`
     &:focus{
     background: #292421;
     color: #DAD5CE;
-}`;
+    }
+    @media ${device.mobileL} {
+      font-size: 10px;
+    }
+`;
 
 const BtnMenu = ({ text }) => {
   return (

@@ -12,7 +12,9 @@ const Container = Styled.nav`
     @media ${device.mobileL} {
       top: 0;
       padding: 0;
-
+      height: 100vh;
+      display: flex;
+      align-items: flex-end;
     }
 `;
 
@@ -32,6 +34,7 @@ const Nav = Styled.nav`
     color: black;
     @media ${device.mobileL} {
       font-size: 12px;
+      height: 45px;
     }
 `;
 
@@ -45,7 +48,6 @@ const NavbarLink = Styled(Link)`
     background: linear-gradient(0deg, #DAD5CE, #DAD5CE);
     text-decoration:none;
     font-family: Playfair Display;
-    font-size: 16px;
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 0.02em;
