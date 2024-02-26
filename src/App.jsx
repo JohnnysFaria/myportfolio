@@ -12,6 +12,7 @@ import ProjetosUm from './Components/Projetos/ProjetoUm/ProjetosUm';
 import ProjetosDois from './Components/Projetos/ProjetoDois/ProjetoDois';
 import SectionProjects from './Components/Projetos/SectionProjects';
 import { device } from './Components/Utils/size'
+import Formacao from './Components/Formacao/Formacao';
  
 const Background = Styled.div`
   background: #C8C3BA;
@@ -43,6 +44,7 @@ const App = () => {
             <Profile />
             <SectionProjects />
             <XP />
+            <Formacao />
             <Home />
             <Footer />
         </Container>
