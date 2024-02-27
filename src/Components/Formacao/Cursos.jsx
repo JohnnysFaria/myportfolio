@@ -4,13 +4,17 @@ import { TituloH2 } from '../Utils/Titles'
 import Icone from '../../img/iconeCursos.png'
 import ListaCursos from './ListaCursos'
 
-
+const Container = Styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+`
 
 
 
 const Cursos = () => {
   return (
-    <>
+    <Container>
     <div>
         <TituloH2 titulo='Cursos Intensivos' />
         <ListaCursos nome='React: Comece seu produto full stack' duracao='120h' />
@@ -21,8 +25,10 @@ const Cursos = () => {
     </div>
     <div>
     <TituloH2 titulo='Idioma' />
+    <ListaCursos nome='Inglês' duracao='Intermediario' />
+    <ListaCursos nome='Francês' duracao='Básico' />
     </div>
-    </>
+    </Container>
   )
 }
 
