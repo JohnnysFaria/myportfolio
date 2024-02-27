@@ -19,7 +19,7 @@ const Formacao = () => {
         <Titles title='Algo aqui'/>
     <Container>
         <Cards modalidade='Graduação' text='Analise e Desenvolvimento de Sistemas' instituicao='Uninove' />
-        <Cards modalidade='Graduaçãao' text='Analise e Desenvolvimento de Sistemas' instituicao='Uninove' />
+        <Cards modalidade='Graduação' text='Analise e Desenvolvimento de Sistemas' instituicao='Uninove' />
         <Cards modalidade='Graduação' text='Analise e Desenvolvimento de Sistemas' instituicao='Uninove' />
         <Cards modalidade='Graduação' text='Analise e Desenvolvimento de Sistemas' instituicao='Uninove' />
     </Container>
