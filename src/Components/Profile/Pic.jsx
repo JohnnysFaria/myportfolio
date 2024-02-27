@@ -1,11 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import Styled from 'styled-components';
 import Profilep from '../../img/profilepic.png';
 import Mypic from '../../img/profilepicactive.png';
-import { device } from '../Utils/size'
-
-
 
 
 

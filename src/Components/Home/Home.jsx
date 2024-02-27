@@ -1,6 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
-import Titles from '../Utils/Titles';
+import {Titles} from '../Utils/Titles';
 
 const A = Styled.div`
     width: 100%;
@@ -11,7 +11,8 @@ const A = Styled.div`
 const Home = () => {
   return (
     <>
-      <Titles title="Algo escrito" />
+      <Titles title="Algo escrito"/>
+
       <A>Aqui será o Home</A>
     </>
   );

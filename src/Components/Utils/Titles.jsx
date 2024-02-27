@@ -14,6 +14,16 @@ const H1 = Styled.h1`
   text-align: center;
 `;
 
+const H2 = Styled.h1`
+    font-family: Playfair Display;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin: 20px 0 20px 0;
+`
+
 export const Titles = ({ title }) => {
   return (
     <>
@@ -22,4 +32,14 @@ export const Titles = ({ title }) => {
   );
 };
 
-export default Titles;
+
+
+
+export const TituloH2 = ({titulo}) => {
+  return (
+    <>
+        <H2>{titulo}</H2>
+    </>
+  )
+}
+

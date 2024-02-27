@@ -3,7 +3,7 @@ import Styled from 'styled-components';
 import InfoProjeto from './InfoProjeto';
 import Thumbnail from './Thumbnail';
 import BtnProjeto from '../BtnProjeto';
-import Titles from '../../Utils/Titles';
+import {Titles} from '../../Utils/Titles';
 import { device } from '../../Utils/size'
 
 const Section = Styled.section`

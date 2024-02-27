@@ -10,8 +10,8 @@ const SobreText = Styled.div`
 
     @media ${device.tablet} {
       margin: 0 auto;
-      border: none;
-      padding: 0;
+      margin-top: 20px;
+      padding: 20px;
     }
 `;
 

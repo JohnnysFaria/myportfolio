@@ -35,6 +35,8 @@ const Nav = Styled.nav`
     @media ${device.mobileL} {
       font-size: 12px;
       height: 45px;
+      background: #D5723A;
+
     }
 `;
 
@@ -57,9 +59,15 @@ const NavbarLink = Styled(Link)`
     &:focus{
     background: #292421;
     color: #DAD5CE;
+    }
+    @media ${device.mobileL} {
+      background: #D5723A;
+      &:hover{
+        background: #A54729;
 
-
-}`;
+      }
+    }
+    `;
 
 const Menu = () => {
   return (
@@ -111,8 +119,7 @@ const Menu = () => {
           smooth={true}
           offset={50}
           duration={500}
-        >
-
+        > 
           Contato
         </NavbarLink>
       </Nav>

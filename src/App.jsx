@@ -45,7 +45,7 @@ const App = () => {
             <SectionProjects />
             <XP />
             <Formacao />
-            <Home />
+            <Home/>
             <Footer />
         </Container>
       </BrowserRouter>

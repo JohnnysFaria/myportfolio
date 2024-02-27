@@ -1,6 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
-import Titles from '../Utils/Titles';
+import {Titles} from '../Utils/Titles';
 import CardXp, { Eclipse } from './CardXp';
 import { device } from '../Utils/size'
 

@@ -1,8 +1,9 @@
 import React from 'react'
 import Cards from './Cards'
-import Titles from '../Utils/Titles';
+import {Titles} from '../Utils/Titles';
 import Styled from 'styled-components';
 import { device } from '../Utils/size'
+import Cursos from './Cursos';
 
 const Container = Styled.div`
     display: flex;
@@ -23,6 +24,7 @@ const Formacao = () => {
         <Cards modalidade='Graduação' text='Analise e Desenvolvimento de Sistemas' instituicao='Uninove' />
         <Cards modalidade='Graduação' text='Analise e Desenvolvimento de Sistemas' instituicao='Uninove' />
     </Container>
+    <Cursos/>
     </>
   )
 }
