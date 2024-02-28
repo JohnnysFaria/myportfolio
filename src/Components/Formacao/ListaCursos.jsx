@@ -19,10 +19,16 @@ const Paragrafo = Styled.p`
     color: #2A2623;
 `
 
+const Line = Styled.div`
+  width: 100%;
+  border: 1px solid #726B5C;
+  height: 10px;
+`
+
 const ListaCursos = ({nome, duracao}) => {
   return (
     <Container>
-        <Paragrafo><img src={Icone} alt="icone" />{nome}</Paragrafo>
+        <Paragrafo><img src={Icone} alt="icone" />{nome} </Paragrafo>
         <Paragrafo>{duracao}</Paragrafo>
     </Container>
   )

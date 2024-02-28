@@ -1,15 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Styled from 'styled-components';
 import Menu from './Components/Menu/Menu';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Profile from './Components/Profile/Profile';
-import { Sobre } from './Components/Profile/Sobre';
 import Home from './Components/Home/Home';
 import XP from './Components/XP/XP';
-import ProjetosUm from './Components/Projetos/ProjetoUm/ProjetosUm';
-import ProjetosDois from './Components/Projetos/ProjetoDois/ProjetoDois';
 import SectionProjects from './Components/Projetos/SectionProjects';
 import { device } from './Components/Utils/size'
 import Formacao from './Components/Formacao/Formacao';
@@ -31,13 +27,9 @@ const Container = Styled.div`
 `;
 
 
-
-
-
 const App = () => {
   return (
     <Background>
-      <BrowserRouter>
         <Container>
           <Menu />
           <Header />
@@ -45,10 +37,8 @@ const App = () => {
             <SectionProjects />
             <XP />
             <Formacao />
-            <Home/>
-            <Footer />
         </Container>
-      </BrowserRouter>
+        <Footer />
     </Background>
   );
 };
