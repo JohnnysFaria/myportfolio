@@ -107,7 +107,7 @@ const Menu = () => {
           to="formacao"
           spy={true}
           smooth={true}
-          offset={-150}
+          offset={-170}
           duration={500}
         >
           Formação

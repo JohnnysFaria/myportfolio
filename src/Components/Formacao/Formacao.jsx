@@ -17,8 +17,8 @@ const Container = Styled.div`
 const Formacao = () => {
   return (
     <>
-        <Titles title='Algo aqui'/>
-    <Container>
+        <Titles title='Formação' />
+    <Container id='formacao'>
         <Cards modalidade='Graduação' text='Analise e Desenvolvimento de Sistemas' instituicao='Uninove' />
         <Cards modalidade='Graduação' text='Analise e Desenvolvimento de Sistemas' instituicao='Uninove' />
         <Cards modalidade='Graduação' text='Analise e Desenvolvimento de Sistemas' instituicao='Uninove' />

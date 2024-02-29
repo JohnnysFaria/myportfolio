@@ -1,13 +1,13 @@
 import React from 'react'
 import Styled from 'styled-components'
 import { TituloH2 } from '../Utils/Titles'
-import Icone from '../../img/iconeCursos.png'
 import ListaCursos from './ListaCursos'
 
 const Container = Styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 `
 
 
@@ -19,7 +19,6 @@ const Cursos = () => {
     <div>
         <TituloH2 titulo='Cursos Intensivos' />
         <ListaCursos nome='React: Comece seu produto full stack' duracao='120h' />
-
         <ListaCursos nome='Node.js: testes unitários e de integração' duracao='120h' />
         <ListaCursos nome='Tailwind CSS: Estilizando a sua página com classes utilitárias' duracao='120h' />
         <ListaCursos nome='HTTP: Entendendo a web por baixo dos panos' duracao='120h' />

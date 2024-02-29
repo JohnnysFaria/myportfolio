@@ -4,7 +4,6 @@ import Menu from './Components/Menu/Menu';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Profile from './Components/Profile/Profile';
-import Home from './Components/Home/Home';
 import XP from './Components/XP/XP';
 import SectionProjects from './Components/Projetos/SectionProjects';
 import { device } from './Components/Utils/size'
@@ -32,11 +31,11 @@ const App = () => {
     <Background>
         <Container>
           <Menu />
-          <Header />
+            <Header />
             <Profile />
             <SectionProjects />
             <XP />
-            <Formacao />
+            <Formacao  />
         </Container>
         <Footer />
     </Background>
