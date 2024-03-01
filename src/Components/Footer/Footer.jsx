@@ -29,8 +29,8 @@ const Parafrago = Styled.p`
     color: #F4F4F2;
 
     @media ${device.tablet} {
-        font-size: 19px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 22px;
     }
 `
 
