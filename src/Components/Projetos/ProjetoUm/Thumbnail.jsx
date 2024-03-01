@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Styled from 'styled-components';
 import Cover from '../../../img/projeto1.png';
 import CoverActive from '../../../img/projeto1ativo.png';
+import { device } from '../../Utils/size';
 
 
 const Container = Styled.div`
@@ -12,11 +13,13 @@ const Container = Styled.div`
 `;
 
 const Pic = Styled.div`
-  width: 100%;
+ 
 `;
 
 const Image = Styled.img`
+ @media ${device.mobileL} {
     width: 100%;
+  }
 `
 
 export const Thumbnail = () => {
@@ -24,12 +27,10 @@ export const Thumbnail = () => {
   return (
     <>
       <Container id="projetos">
-        <Pic
-          onMouseOver={() => setOver(true)}
-          onMouseOut={() => setOver(false)}
-        >
-          <Image src={over ? CoverActive : Cover} alt="arrow" />
-        </Pic>
+          <Image           
+           onMouseOver={() => setOver(true)}
+           onMouseOut={() => setOver(false)}
+           src={over ? CoverActive : Cover} alt="arrow" />
       </Container>
     </>
   );

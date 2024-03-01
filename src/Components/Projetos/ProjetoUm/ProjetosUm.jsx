@@ -37,10 +37,10 @@ const ProjetoUm = () => {
     <Section>
     <Titles title='Projetos'/>
     <Wrapper>
-    <InfoProjeto/>
-    <Thumbnail  />
+        <InfoProjeto/>
+        <Thumbnail  />
     </Wrapper>
-    <WrapperBtn>
+        <WrapperBtn>
     <BtnProjeto/>
     </WrapperBtn>
     </Section>

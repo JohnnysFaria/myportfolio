@@ -27,9 +27,16 @@ const Parafrago = Styled.p`
     letter-spacing: 0.02em;
     text-align: left;
     color: #F4F4F2;
+
+    @media ${device.tablet} {
+        font-size: 19px;
+        line-height: 30px;
+    }
 `
 
 const Contato = Styled.div`
+    display: flex;
+    align-items: center;
     font-family: Lora;
     font-size: 16px;
     font-weight: 400;
@@ -37,6 +44,8 @@ const Contato = Styled.div`
     letter-spacing: 0em;
     text-align: left;
     color: #F7F7F7;
+
+
 `
 
 export const Footer = () => {

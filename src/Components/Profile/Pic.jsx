@@ -2,8 +2,14 @@ import React from 'react';
 import { useState } from 'react';
 import Profilep from '../../img/profilepic.png';
 import Mypic from '../../img/profilepicactive.png';
+import { device } from '../Utils/size';
+import Styled from 'styled-components';
 
-
+const Image = Styled.img`
+  @media ${device.mobileS} {
+    max-width: 300px;
+  }
+`
 
 export const Pic = () => {
   const [over, setOver] = useState(false);
@@ -13,7 +19,7 @@ export const Pic = () => {
           onMouseOver={() => setOver(true)}
           onMouseOut={() => setOver(false)}
         >
-          <img src={over ? Mypic : Profilep} alt="arrow" />
+          <Image src={over ? Mypic : Profilep} alt="arrow" />
         </div>
     </>
   );
